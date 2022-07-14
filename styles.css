@@ -132,7 +132,20 @@ margin-top: 10vw;
     bottom: 0;
 }
 
+.animacion{
+    animation-name: mianimacion;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
 
+@keyframes mianimacion {
+    0% {background: black;}
+    25% {background: white;}
+    50% {background: orangered;}
+    75% {background: palevioletred;}
+    100% {background: red;}
+}
 
 .flexmenu{
     display: flex;
