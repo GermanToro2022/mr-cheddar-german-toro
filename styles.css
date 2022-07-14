@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.texto--amarillo {
+    color: yellow;
+}
+
+
+.fondohamburguesatitulo{
+    background-image: url(https://thetop.cl/wp-content/uploads/2020/05/michael-wave-G3tRHpENRTs-unsplash-scaled-1920x400.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    border: 5px solid yellow;
+    
+    
+}
+
+.texto-centrado{
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+body{
+    background-image: url(https://w0.peakpx.com/wallpaper/606/382/HD-wallpaper-surface-texture-yellow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tamaño60{
+    font-size: 60px;
+}
+
+.tamaño30{
+    font-size: 30px;
+}
+
+.fondonegro{
+    background-color: black;
+}
+
+.bordescircu{
+    border-radius: 20px;
+}
+
+.imagen300{
+    height: 300px;
+    width: 300px;
+
+}
+
+.margen20{
+    margin: 20px;
+
+}
+
+.margenarriba30{
+    margin-top: 30px;
+}
+
+.textoderecha{
+    text-align: right;
+}
+
+.espacio{
+    margin-bottom: 30px;
+}
+
+.cambiarletra{
+    font-size:large;
+}
+
+.cuadrotextogrande{
+    padding-top: 200px;
+    width: 300px;
+}
+
+.tamañoimagen{
+    height: 200px;
+    width: 210px;
+}
+
+.margen10{
+    margin-top: 10px;
+}
+
+.imagenacerca{
+    height: 60vh;
+    width: 30vw;
+}
+
+.ubicacion{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin-top: 10vw;
+}
+
+.textoimagen{
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.texto400{
+    width: 400px;
+    max-width: 400px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.textonav{
+    font-size: 2rem;
+}
+
+.foter{
+    margin-top: 50px;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.flexmenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: all 1s;
+    list-style: none;
+}
+
+.foter-dos{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+}
+
+.borde_nav{
+    border: 3px solid black;
+}
+
+.div-padre{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.div-hijo{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 25px;
+}
+
+.div-imagen{
+    display: block;
+    height: 200px;
+    width: 210px;
+    border-radius: 20%;
+}
+
+.div-texto{
+    text-align: justify;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 'header'
+    'main'
+    'footer';
+}
+
+
+.header{
+    grid-area: Header;
+    height: 10vh;
+}
+
+.header_h1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main{
+    grid-area: Main;
+    height: 80vh;
+}
+
+.main-p{
+    display: flex;
+    align-items: start;
+    margin: 20px;
+    font-size: large;
+}
+
+.footer{
+    grid-area: Footer;
+    height: 10vh;
+}
+
+.foterabajo{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-evenly;
+}
+
+@media screen and (maw-widht:742px){
+
+    .borde_nav{
+        margin-top: 5px;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    header{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .foter-dos{
+        width: 100vh;
+    }
+
+}
