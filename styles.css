@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
-.texto--amarillo {
+.texto--amarillo{
     color: yellow;
+}
+
+.tamañoletra{
+    font-size: 1.5rem;
 }
 
 
@@ -132,6 +136,10 @@ margin-top: 10vw;
     bottom: 0;
 }
 
+.espacionav{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 .flexmenu{
