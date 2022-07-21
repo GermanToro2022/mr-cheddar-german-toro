@@ -1,44 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr Cheddar</title>
-    <link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr Cheddar</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+
 <body>
   <header>
 
-    <nav class="fondohamburguesatitulo">
-        <h1 class="texto--amarillo  texto-centrado tamaño60 header_h1">Mr. Cheddar</h1>
-        <ul class="flexmenu">
-            <li><a href="../index.html" class="texto--amarillo flexmenu borde_nav">Inicio</a></li>
-            <li><a href="./nuestras-variedades.html" class="texto--amarillo flexmenu borde_nav">Nuestras Variedades</a></li>
-            <li><a class="texto--amarillo flexmenu borde_nav" href="./sucursales.html">Sucursales</a></li>
-            <li><a href="./horarios.html" class="texto--amarillo flexmenu borde_nav">Horarios</a></li>
-            <li><a href="./acerca-de.html" class="texto--amarillo flexmenu borde_nav">Acerca de Nosotros</a></li>
-            <li><a href="./contacto.html" class="texto--amarillo flexmenu borde_nav">Contactanos</a></li>
-        </ul>
+    <!-- No usar -->
+    <!-- <nav class="fondohamburguesatitulo"> -->
+      <!-- <h1 class="texto--amarillo  texto-centrado tamaño60 header_h1">Mr. Cheddar</h1> -->
+
+      <nav class=" fondohamburguesatitulo navbar navbar-expand-lg navbar-dark bg-dark fondohamburguesatitulo">
+        <h1 class="texto--amarillo  texto-centrado tamaño60">Mr. Cheddar</h1>
+        <div class="container-fluid texto--amarillo">
+          <a class="navbar-brand texto--amarillo" href="#">Mr. Cheddar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 texto--amarillo">
+              <li class="nav-item texto--amarillo">
+                <a class="nav-link active texto--amarillo" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nuestras-variedades.html">Nuestras Variedades</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Otras Opciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./sucursales.html">Sucursales</a></li>
+                  <li><a class="dropdown-item" href="./horarios.html">Horarios</a></li>
+                  <li><a class="dropdown-item" href="./acerca-de.html">Acerca de Nosotros</a></li>
+                  <li>
+                    <hr class="dropdown-dividor">
+                  </li>
+                  <li><a class="dropdown-item" href="./contacto.html">Contactanos</a></li>
+                </ul>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     </nav>
-</header>  
+    </nav>
+  </header>
   <section>
-<h1 class="fondonegro texto--amarillo texto-centrado espacio">Horarios</h1>
-  
-  <p class="espacio cambiarletra main-p">
-    <b>
-  <br>✔ Av. Rafael Nuñez 3521, Lunes a Domingos de 20:00 hs a 00:00 hs</br>
-  <br>✔ Av. Alem 2122, Lunes a Domingos de 20:00 hs a 00:00 hs</br>
-  <br>✔ Paseo del Jockey Lunes a Domingos de 17:00 hs a 22:00 hs</br>
-  <br>✔ Av. Colon 3705 Lunes a Sabados de 20 hs a 00:00 hs</br>
-  <br>✔ Av. Monseñor Pablo Cabrera Lunes a Domingos de 20 hs a 01:00 hs</br>
-  <br>✔ Chacabuco 753 Lunes a Sabados de 19:00 hs a 00:30 hs</br>
-</b>
-</p>
+    <h1 class="fondonegro texto--amarillo texto-centrado espacio animacion">Horarios</h1>
+
+    <p class="espacio cambiarletra main-p">
+      <b>
+        <br>✔ Av. Rafael Nuñez 3521, Lunes a Domingos de 20:00 hs a 00:00 hs</br>
+        <br>✔ Av. Alem 2122, Lunes a Domingos de 20:00 hs a 00:00 hs</br>
+        <br>✔ Paseo del Jockey Lunes a Domingos de 17:00 hs a 22:00 hs</br>
+        <br>✔ Av. Colon 3705 Lunes a Sabados de 20 hs a 00:00 hs</br>
+        <br>✔ Av. Monseñor Pablo Cabrera Lunes a Domingos de 20 hs a 01:00 hs</br>
+        <br>✔ Chacabuco 753 Lunes a Sabados de 19:00 hs a 00:30 hs</br>
+      </b>
+    </p>
 
   </section>
-  <footer class="foter-dos foterabajo">
-      <p class="fondonegro texto--amarillo texto-centrado">Las mejores de Córdoba Capital, Argentina 🍔🎇</p>
+  
+  <footer class="foter-dos foterabajo foterhorarios">
+    <p class="fondonegro texto--amarillo texto-centrado">Las mejores de Córdoba Capital, Argentina 🍔🎇</p>
   </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>

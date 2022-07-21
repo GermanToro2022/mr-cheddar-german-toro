@@ -153,6 +153,21 @@ margin-top: 10vw;
     list-style: none;
 }
 
+.animacion{
+    animation-name: mianimacion;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mianimacion {
+    0% {background: black;}
+    25% {background: white;}
+    50% {background: orangered;}
+    75% {background: palevioletred;}
+    100% {background: red;}
+}
+
 .foter-dos{
     width: 100%;
     height: 50px;
@@ -231,6 +246,13 @@ body{
     justify-content: space-evenly;
 }
 
+.foterhorarios{
+    background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
 @media screen and (maw-widht:742px){
 
     .borde_nav{
@@ -250,4 +272,13 @@ body{
         width: 100vh;
     }
 
+}
+
+@media screen and (max-widht: 512px){
+    .foterhorarios{
+        display: flex;
+        position: absolute;
+        justify-content: space-evenly;
+
+    }
 }
